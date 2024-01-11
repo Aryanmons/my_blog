@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background: url(land.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    max-width: 95vw;
+    /* max-height: 95vh; */
+   padding : 2rem 1rem;
+   margin: 0 auto;
+    /* background-color: red; */
+backdrop-filter: blur(4px);
+}
+
+ .header{
+    margin-bottom: 2.8rem;
+ }
+ .heading{
+    margin-bottom: 1rem;
+    font-size: 1.9rem;
+    font-weight: 600;
+    text-align: center;
+ }
+header:hover .heading{
+    transform: scale(1.2);
+    transition-duration: 600ms;
+    text-decoration: underline;
+    color: rgb(61, 48, 134);
+}
+ .para{
+    text-align: center;
+    max-width: 568px;
+    font-size: 17px;
+    margin: 0 auto;
+    color: rgb(241, 234, 234);
+ }
+ .main__content {
+    display: grid;
+    gap: 1.9rem;
+    grid-template-columns: repeat(1, 1fr);
+ } 
+@media (min-width:472px){
+    .main__content {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (min-width:655px){
+    .main__content {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (min-width:894px){
+    .main__content {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+.under_card{
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    border: 1px solid rgb(91, 83, 83);
+    border-radius: 4px;
+    /* width: 30vw; */
+ }
+
+ .card_image{
+    position: relative;
+    overflow: hidden;
+    height: 16rem;
+     
+ }
+ .imagekeandar{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+ }
+
+ .down_content {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    padding: 1.5rem;
+    height :8rem
+}
+
+ .under_card:hover .imagekeandar{
+    transform: scale(1.1);
+    transition-duration: 500ms;
+ }
+
+ .down_title{
+    font-size: 1rem;
+    overflow: hidden;
+    font-weight: 600;
+     line-height: 2rem;
+     margin-bottom: .3rem;
+     color: rgb(248, 229, 201);
+     text-decoration: none;
+ }
+
+ .forhovering:hover .down_title {
+    color: rgb(246, 12, 12);
+    text-decoration: underline;
+}
+a{
+    text-decoration: none;
+}
+.card_para{
+    height: 2rem;
+    color: rgb(224, 243, 16);
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 1.5rem;
+    padding-bottom: 1.5rem;
+
+
+.left{
+    display: flex;
+     flex-direction: row;
+}
+.author{
+height: 2rem;
+width: 2rem;
+ margin: .4rem;
+overflow: hidden;
+border: 1px solid rgb(59, 47, 47);
+border-radius: 50%;
+border-color: rgb(89, 74, 74);
+background-color: aqua;
+
+}
+
+.author_right{
+   margin: 0.3rem;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.first{
+    color: rgb(167, 167, 236);
+}
+.second{
+    font-size: 1rem;
+    color: rgb(222, 162, 137);
+}
+
+.right{
+    font-size: 0.9rem;
+    
+    border: 1px solid rgb(85, 2, 2);
+    border-radius: 2px;
+line-height: 1.3rem;
+padding: .29rem .5rem;
+color: rgb(0, 255, 251);
+}
